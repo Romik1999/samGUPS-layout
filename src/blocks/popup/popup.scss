@@ -1,0 +1,86 @@
+@import "src/scss/_vars.scss";
+
+.popup {
+  opacity: 0;
+  transition: .35s ease;
+  visibility: hidden;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  padding: 15px;
+
+  &__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    max-width: 480px;
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 30px;
+
+    .head {
+      h4 {
+        margin: 0;
+        font-family: $circe;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #000;
+      }
+    }
+
+    .feedback {
+      &__form {
+        width: 100%;
+        padding: 15px 10px;
+        border: none;
+
+        label {
+          margin-bottom: 15px;
+        }
+
+        input {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .brif-elem {
+      margin-top: 15px;
+      border: none;
+      padding: 15px;
+      border-top: 1px solid #4545452f;
+
+      .action {
+        p {
+          font-family: $circe;
+          font-size: 18px;
+          font-weight: 300;
+        }
+
+        label {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

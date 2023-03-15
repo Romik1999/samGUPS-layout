@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'circe';
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Circe-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'circe';
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/Circe-Light.woff) format('woff');
+}
+@font-face {
+    font-family: 'circe';
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Circe-Bold.woff) format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+$circe: 'circe', sans-serif;
+
+$rubik: 'Rubik', sans-serif;
