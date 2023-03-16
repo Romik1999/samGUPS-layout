@@ -694,11 +694,17 @@ main.main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
 }
 
 .header__title {
-  margin-right: auto;
   max-width: 152px;
+  width: 100%;
 }
 
 .header__title a {
@@ -718,7 +724,7 @@ main.main {
   height: 30px;
 }
 
-.header__nav ul {
+.header__items {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -728,20 +734,28 @@ main.main {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.header__nav ul li {
-  margin-left: 50px;
-}
-
-.header__nav ul li a {
-  font-size: inherit;
-  color: inherit;
+.header__link {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #454545;
   text-decoration: none;
   position: relative;
+  white-space: nowrap;
 }
 
-.header__nav ul li a::before {
+.header__link::before {
   content: "";
   position: absolute;
   left: -4px;
@@ -755,7 +769,7 @@ main.main {
   transition: 0.35s ease;
 }
 
-.header__nav ul li a:hover::before {
+.header__link:hover::before {
   opacity: 1;
 }
 
@@ -799,10 +813,12 @@ main.main {
 }
 
 .hero__text h1 {
-  font-family: "circe", sans-serif;
+  font-family: "Circe";
+  font-style: normal;
   font-weight: 700;
-  margin: 0;
-  line-height: 1.3;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.05em;
   color: #373737;
   margin-bottom: 20px;
 }
@@ -817,6 +833,7 @@ main.main {
   font-size: 23px;
   color: #303030;
   line-height: 1.3;
+  font-family: "Circe";
 }
 
 .hero__text .text p:last-child {
@@ -888,12 +905,15 @@ main.main {
 }
 
 .programm__title h2 {
-  font-size: 54px;
-  line-height: 1.3;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54.2px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
   color: #373737;
-  margin: 0;
-  width: 100%;
   max-width: 480px;
+  margin-top: 0;
 }
 
 .programm__list {
@@ -1194,6 +1214,7 @@ main.main {
   line-height: 1.3;
   text-decoration: none;
   margin-bottom: 20px;
+  font-family: "Circe";
 }
 
 .feedback__details .social {
@@ -1485,13 +1506,27 @@ main.main {
   margin-bottom: 0;
 }
 
-@media (max-width: 1024px) {
-  .header {
-    padding: 30px 0;
+@media (max-width: 1199px) {
+  .header__body {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
   }
 
-  .header__nav ul li {
-    margin-left: 30px;
+  .header__items {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__link {
+    font-size: 18px;
+  }
+
+  .header {
+    padding: 30px 0;
   }
 
   .hero {
@@ -1592,6 +1627,12 @@ main.main {
 
   .tariff-item__price {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header__link {
+    font-size: 16px;
   }
 }
 
