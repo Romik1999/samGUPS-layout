@@ -942,6 +942,7 @@ main.main {
   font-size: 18px;
   color: #000;
   line-height: 1.3;
+  font-family: "Circe";
 }
 
 .programm__item .text p a {
@@ -949,6 +950,7 @@ main.main {
   display: block;
   color: #281AC7;
   text-decoration: none;
+  font-family: "Circe";
 }
 
 .programm__btn {
