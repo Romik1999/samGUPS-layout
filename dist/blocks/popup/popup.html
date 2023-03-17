@@ -7,53 +7,79 @@
                 </h4>
             </div>
             <div class="brif-elem">
-                <div class="action">
+                <div class="courses">
                     <p>
                         Выберите курс
                     </p>
-                    <label>
-                        <input data-price="500" type="checkbox">
-                        <span></span>
-                        <p>
-                            Математика
-                        </p>
+                    <label class="courses-item">
+                        <input class="courses-item__checkbox" type="checkbox" value="Математика" tabindex="">
+                        <span class="courses-item__icon"></span>
+                        <span class="courses-item__text">Математика</span>
                     </label>
-                    <label>
-                        <input data-price="500" type="checkbox">
-                        <span></span>
-                        <p>
-                            Физика
-                        </p>
+                    <label class="courses-item">
+                        <input class="courses-item__checkbox" type="checkbox" value="Физика" tabindex="">
+                        <span class="courses-item__icon"></span>
+                        <span class="courses-item__text">Физика</span>
                     </label>
-                    <label>
-                        <input data-price="500" type="checkbox">
-                        <span></span>
-                        <p>
-                            Русский язык
-                        </p>
+                    <label class="courses-item">
+                        <input class="courses-item__checkbox" type="checkbox" value="Русский язык" tabindex="">
+                        <span class="courses-item__icon"></span>
+                        <span class="courses-item__text">Русский язык</span>
                     </label>
                 </div>
             </div>
             <div class="feedback__form">
-                <form action="#">
-                    <label>
-                        <input placeholder="ФИО:" type="text">
-                    </label>
-                    <label>
-                        <input placeholder="Телефон:" type="text">
-                    </label>
-                    <label>
-                        <input placeholder="Контакты родителей:"></input>
-                    </label>
-                    <div class="pp-form">
-                                <span>
-                                    Нажимая кнопку “Отправить запрос” Вы автоматически соглашаетесь на обработку персональных данных.
-                                </span>
+                <div class="wpcf7 js" id="wpcf7-f23-o2" lang="ru-RU" dir="ltr">
+                    <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
+                        <ul></ul>
                     </div>
-                    <div class="action">
-                        <button class="main-btn">Отправить запрос</button>
-                    </div>
-                </form>
+                    <form action="/#wpcf7-f23-o2" method="post" class="wpcf7-form init" aria-label="Контактная форма"
+                          novalidate="novalidate" data-status="init">
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="23">
+                            <input type="hidden" name="_wpcf7_version" value="5.7.4">
+                            <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f23-o2">
+                            <input type="hidden" name="_wpcf7_container_post" value="0">
+                            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                        </div>
+                        <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
+                                                                                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                              autocomplete="name"
+                                                                                              aria-required="true"
+                                                                                              aria-invalid="false"
+                                                                                              placeholder="ФИО:"
+                                                                                              value="" type="text"
+                                                                                              name="your-name"></span><span
+                                class="wpcf7-form-control-wrap" data-name="tel"><input size="40"
+                                                                                       class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
+                                                                                       aria-required="true"
+                                                                                       aria-invalid="false"
+                                                                                       placeholder="Телефон:" value=""
+                                                                                       type="tel"
+                                                                                       name="tel"></span><span
+                                class="wpcf7-form-control-wrap" data-name="parents"><input size="40"
+                                                                                           class="wpcf7-form-control wpcf7-text"
+                                                                                           aria-invalid="false"
+                                                                                           placeholder="Контакты родителей:"
+                                                                                           value="" type="text"
+                                                                                           name="parents"></span><span
+                                class="wpcf7-form-control-wrap" data-name="courses"><input size="40"
+                                                                                           class="wpcf7-form-control wpcf7-text hidden"
+                                                                                           aria-invalid="false" value=""
+                                                                                           type="text"
+                                                                                           name="courses"></span>
+                        </p>
+                        <div class="pp-form">
+                            <p><span>Нажимая кнопку “Отправить запрос” Вы автоматически соглашаетесь на обработку персональных данных.</span>
+                            </p>
+                        </div>
+                        <p><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit"
+                                  value="Отправить"><span class="wpcf7-spinner"></span>
+                        </p>
+                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                    </form>
+                </div>
             </div>
         </article>
     </div>

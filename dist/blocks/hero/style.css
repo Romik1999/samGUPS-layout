@@ -375,15 +375,16 @@
           box-sizing: border-box;
 }
 
-.feedback__form form label {
+.feedback__form form span.wpcf7-form-control-wrap {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 30px;
+  display: block;
 }
 
-.feedback__form form label input,
-.feedback__form form label textarea {
+.feedback__form form span.wpcf7-form-control-wrap input,
+.feedback__form form span.wpcf7-form-control-wrap textarea {
   width: 100%;
   font-family: "circe", sans-serif;
   font-weight: 400;
@@ -395,11 +396,12 @@
           box-sizing: border-box;
 }
 
-.feedback__form form label textarea {
+.feedback__form form span.wpcf7-form-control-wrap textarea {
   min-height: 250px;
+  resize: none;
 }
 
-.feedback__form form label:last-of-type {
+.feedback__form form span.wpcf7-form-control-wrap:last-of-type {
   margin-bottom: 10px;
 }
 
@@ -412,12 +414,35 @@
   display: block;
 }
 
-.feedback__form form .action button {
+.feedback__form form .wpcf7-submit {
   width: 100%;
   max-width: none;
   border-radius: 5px;
   padding: 8px 15px;
   font-size: 16px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: -o-linear-gradient(top, #4386d7 0, #4086dc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4386d7), to(#4086dc));
+  background: linear-gradient(180deg, #4386d7 0, #4086dc 100%);
+  -webkit-box-shadow: 0 3.48101px 3.48101px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3.48101px 3.48101px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-family: circe, sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  -webkit-transition: 0.35s ease;
+  -o-transition: 0.35s ease;
+  transition: 0.35s ease;
+}
+
+.feedback__form form .wpcf7-submit:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .feedback__details {

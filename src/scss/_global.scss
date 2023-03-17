@@ -1,18 +1,39 @@
 .container {
-    margin: 0 auto;
-    box-sizing: border-box;
-    max-width: 1160px;
-    padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1160px;
+  padding: 0 15px;
 }
 
 .wrapper {
-    color: #454545;
-    position: relative;
-    background-image: url(../img/backer.png);
-    background-position: top center;
-    background-size: cover;
+  color: #454545;
+  position: relative;
+  background-image: url(../img/backer.png);
+  background-position: top center;
+  background-size: cover;
 }
 
 main.main {
-   padding-top: 140px;
+  padding-top: 140px;
+}
+
+.wpcf7 {
+  p {
+    margin: 0;
+  }
+
+  .wpcf7-spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0 !important;
+  }
+
+  .wpcf7-response-output{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+  }
 }

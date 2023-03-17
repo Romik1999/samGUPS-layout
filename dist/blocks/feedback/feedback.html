@@ -7,24 +7,35 @@
         </div>
         <div class="feedback__body">
             <div class="feedback__form">
-                <form action="#">
-                    <label>
-                        <input placeholder="Имя:" type="text">
-                    </label>
-                    <label>
-                        <input placeholder="Телефон:" type="text">
-                    </label>
-                    <label>
-                        <textarea placeholder="Ваш Вопрос:"></textarea>
-                    </label>
+                <form action="/#wpcf7-f22-o1" method="post" class="wpcf7-form init" aria-label="Контактная форма"
+                      novalidate="novalidate" data-status="init">
+                    <div style="display: none;">
+                        <input type="hidden" name="_wpcf7" value="22">
+                        <input type="hidden" name="_wpcf7_version" value="5.7.4">
+                        <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f22-o1">
+                        <input type="hidden" name="_wpcf7_container_post" value="0">
+                        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                    </div>
+                    <p>
+                        <span class="wpcf7-form-control-wrap" data-name="your-name">
+                            <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true" aria-invalid="false" placeholder="Имя:" value="" type="text" name="your-name">
+                        </span>
+                        <span class="wpcf7-form-control-wrap" data-name="tel">
+                            <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Телефон:" value="" type="tel" name="tel">
+                        </span>
+                        <span class="wpcf7-form-control-wrap" data-name="your-message">
+                            <textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Ваш Вопрос:" name="your-message"></textarea>
+                        </span>
+                    </p>
                     <div class="pp-form">
-                                    <span>
-                                        Нажимая кнопку “Отправить запрос” Вы автоматически соглашаетесь на обработку персональных данных.
-                                    </span>
+                        <p><span>Нажимая кнопку “Отправить запрос” Вы автоматически соглашаетесь на обработку персональных данных.</span>
+                        </p>
                     </div>
-                    <div class="action">
-                        <button class="main-btn">Отправить запрос</button>
-                    </div>
+                    <p><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Отправить"><span
+                            class="wpcf7-spinner"></span>
+                    </p>
+                    <div class="wpcf7-response-output" aria-hidden="true"></div>
                 </form>
             </div>
             <div class="feedback__details">
@@ -39,7 +50,8 @@
                     <a href="#"><img src="./img/platen.png" alt=""></a>
                 </div>
                 <div class="map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa89251201486a58df2afa0819003a8fecf3fb464548e05eafd157711a611a335&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+                    <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa89251201486a58df2afa0819003a8fecf3fb464548e05eafd157711a611a335&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
                 </div>
             </div>
         </div>
